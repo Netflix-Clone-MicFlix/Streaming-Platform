@@ -5,11 +5,13 @@ export function initializeKeycloak(keycloak: KeycloakService) : () => Promise<bo
         keycloak.init({
             config: {
                 url: 'https://keycloak.krekels-server.com/auth',
-                realm: 'Micflix',
+                realm: 'micflix',
                 clientId: 'micflix-angular-client'
             },
+            loadUserProfileAtStartUp: true,
             initOptions :{
-                checkLoginIframe: true,
+                onLoad: 'check-sso',
+                checkLoginIframe: false,
                 checkLoginIframeInterval: 25
             }
         });
