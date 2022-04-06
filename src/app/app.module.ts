@@ -5,6 +5,8 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './root/app.component';
 import { initializeKeycloak } from './utility/app.init';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -14,7 +16,8 @@ import { initializeKeycloak } from './utility/app.init';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    KeycloakAngularModule
+    KeycloakAngularModule,
+    BrowserAnimationsModule
   ],
   providers: [    {
     provide: APP_INITIALIZER,
