@@ -1,1 +1,4 @@
-<p>watch works!</p>
+
+<div *ngIf="movieDataLoaded | async">
+        <h1>{{movie.name}}</h1>
+</div>

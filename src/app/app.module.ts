@@ -6,6 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './root/app.component';
 import { initializeKeycloak } from './utility/app.init';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { WatchModule } from './modules/watch/watch.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {Ng2SearchPipeModule} from "ng2-search-filter";
+
 
 
 
@@ -15,9 +20,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
+    WatchModule,
     AppRoutingModule,
     KeycloakAngularModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    NgbModule,
+    Ng2SearchPipeModule,
   ],
   providers: [    {
     provide: APP_INITIALIZER,

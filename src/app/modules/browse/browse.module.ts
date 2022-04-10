@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowseComponent } from 'src/app/components/browse/browse.component';
-import { HomeRoutingModule } from './browse-routing.module';
+import { BrowseRoutingModule } from './browse-routing.module';
 import { CarouselHolderModule } from '../carousel-holder/carousel-holder.module';
 
 
@@ -10,7 +10,7 @@ import { CarouselHolderModule } from '../carousel-holder/carousel-holder.module'
   declarations: [BrowseComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    BrowseRoutingModule,
     CarouselHolderModule
   ]
 })
