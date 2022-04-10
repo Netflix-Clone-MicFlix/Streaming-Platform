@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { KeycloakService } from 'keycloak-angular';
 import { Observable } from 'rxjs';
 import { Movie } from 'src/app/entities/movie';
@@ -16,7 +17,7 @@ export class BrowseComponent implements OnInit {
   user = '';
   genres = GENRES
 
-  constructor(private keycloakService: KeycloakService,private movieService: MovieService) {
+  constructor(private router: Router,private keycloakService: KeycloakService) {
    }
 
   ngOnInit(): void {this.initializeUserOptions();}
@@ -30,5 +31,7 @@ export class BrowseComponent implements OnInit {
     this.keycloakService.logout();
   }
 
-  
+  back(){
+    this.router.navigateByUrl('/profile');
+  }
 }

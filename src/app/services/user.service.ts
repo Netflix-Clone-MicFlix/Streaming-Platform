@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Profile } from '../entities/profile';
 import { User } from '../entities/user';
 import { environment } from '../environments/services.environment';
 
@@ -15,8 +16,8 @@ export class UserService {
     return this.http.get<User[]>(environment.userService);
   }
 
-  public getAllProfiles (userId:string): Observable<User[]> {
-    return this.http.get<User[]>(`${environment.movieService}/profile/${userId}`);
+  public getAllProfiles (userId:string): Observable<Profile[]> {
+    return this.http.get<Profile[]>(`${environment.userService}/profile/${userId}`);
   }
 
 }

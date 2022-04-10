@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WatchModule } from './modules/watch/watch.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
+import { ProfileModule } from './modules/profile/profile.module';
 
 
 
@@ -22,6 +23,7 @@ import {Ng2SearchPipeModule} from "ng2-search-filter";
     BrowserModule,
     WatchModule,
     AppRoutingModule,
+    ProfileModule,
     KeycloakAngularModule,
     BrowserAnimationsModule,
     HttpClientModule,

@@ -1,0 +1,12 @@
+<button class="btn btn-secondary" (click)="logout()">logout</button>
+
+<h1 style="text-align:center">Micflix select your profile</h1>
+
+<div class="row"> 
+    <ng-container *ngFor="let profile of profiles | async; let i = index">
+        <div class="column" (click)="onClick()">
+          <img src={{profile_imgs[i]}} alt="Snow" style="width:50%" >
+          <h3>{{profile.name}}</h3>
+        </div>
+    </ng-container>
+</div>
