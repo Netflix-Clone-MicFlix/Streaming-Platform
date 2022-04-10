@@ -1,4 +1,12 @@
 
+<div>
+    <h1>{{movie.name}}</h1>
+    <h3>{{movie.description}}</h3>
+    <button type="button" class="btn btn-secondary" (click)="back()">back</button>
+
+</div>
 <div *ngIf="movieDataLoaded | async">
-        <h1>{{movie.name}}</h1>
+    <iframe class="center-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ">
+    </iframe>
+
 </div>

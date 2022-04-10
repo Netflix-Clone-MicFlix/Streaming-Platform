@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Movie } from 'src/app/entities/movie';
 import { MovieService } from 'src/app/services/movie.service';
@@ -15,7 +15,7 @@ export class WatchComponent implements OnInit {
   movieDataLoaded!: Promise<boolean>;
 
 
-  constructor(private route: ActivatedRoute,private movieService: MovieService) { 
+  constructor(private router: Router,private route: ActivatedRoute,private movieService: MovieService) { 
 
 
   }
@@ -28,6 +28,10 @@ export class WatchComponent implements OnInit {
     }
 
     this.movieService.getMovieById(this.urlMovieId).subscribe( (data) => {this.movie = data; this.movieDataLoaded = Promise.resolve(true);})
+  }
+  back(){
+    this.router.navigateByUrl('/browse');
+
   }
 
 
