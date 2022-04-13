@@ -11,6 +11,8 @@ import { WatchModule } from './modules/watch/watch.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {Ng2SearchPipeModule} from "ng2-search-filter";
 import { ProfileModule } from './modules/profile/profile.module';
+import { ProfileManageModule } from './modules/profile-manage/profile-manage.module';
+import { ProfileEditModule } from './modules/profile-edit/profile-edit.module';
 
 
 
@@ -24,6 +26,8 @@ import { ProfileModule } from './modules/profile/profile.module';
     WatchModule,
     AppRoutingModule,
     ProfileModule,
+    ProfileManageModule,
+    ProfileEditModule,
     KeycloakAngularModule,
     BrowserAnimationsModule,
     HttpClientModule,

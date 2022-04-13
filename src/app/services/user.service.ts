@@ -12,8 +12,8 @@ import { environment } from '../environments/services.environment';
 export class UserService {
   constructor(private http: HttpClient) { }
 
-  public getAllMovies (): Observable<User[]> {
-    return this.http.get<User[]>(environment.userService);
+  public getUser (): Observable<User> {
+    return this.http.get<User>(environment.userService);
   }
 
   public getAllProfiles (userId:string): Observable<Profile[]> {

@@ -16,3 +16,18 @@
     width: 120px;
     transform: translateY(-50%);
   }
+
+  input {
+    float: left;
+    clear: both;
+    width: 10%;
+    margin: 15px auto;
+}
+
+
+h1 {
+  display: inline-block;
+  position: relative;
+  left: 33%; 
+  text-align: center;
+}

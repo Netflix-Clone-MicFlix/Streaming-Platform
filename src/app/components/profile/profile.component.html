@@ -1,12 +1,26 @@
-<button class="btn btn-secondary" (click)="logout()">logout</button>
+<div class="wrapper">
+  <div class="profile">
+    <div class="content">
+      <form action="">
 
-<h1 style="text-align:center">Micflix select your profile</h1>
 
-<div class="row"> 
-    <ng-container *ngFor="let profile of profiles | async; let i = index">
-        <div class="column" (click)="onClick()">
-          <img src={{profile_imgs[i]}} alt="Snow" style="width:50%" >
-          <h3>{{profile.name}}</h3>
+
+        <h1 style="text-align:center">Micflix select your profile</h1>
+        <input style="  float: left;clear: both;width: 10%; margin: 15px auto;" type="button" class="Btn" value="logout" (click)="logout()" />
+        <br><br><br><br><br>
+
+        <div class="row">
+          <ng-container *ngFor="let profile of profiles | async; let i = index">
+            <div class="column" (click)="onClick()">
+              <img src={{profile_imgs[i]}} alt="Snow" style="width:50%">
+              <h3>{{profile.name}}</h3>
+            </div>
+          </ng-container>
         </div>
-    </ng-container>
+        <div class="vertical-center">
+          <input type="button" value="Manage Profiles" class="Btn" (click)="manageProfiles()"/>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>

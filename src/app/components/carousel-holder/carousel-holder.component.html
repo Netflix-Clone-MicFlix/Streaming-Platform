@@ -1,18 +1,21 @@
 <h2>{{genre}}</h2>
-<owl-carousel-o [options]="customOptions">
-  
+<!-- <owl-carousel-o [options]="customOptions">
+
     <ng-container *ngFor="let movie of movies | async; let i = index">
       <ng-template carouselSlide [id]="i.toString()">
-        <img [src]="slides[i]" (click)="onClick(movie.id)" [title]="movie.name">
+        <img [src]="slides[i]" (click)="onClick(movie.id) " [title]="movie.name"  class="item">
       </ng-template>
     </ng-container>
-      
-    </owl-carousel-o>
 
-    <!-- <div class="container-xl">
-      <ng-container  *ngFor="let movie of movies|async">
-          <div>
-              <h4>{{movie.name}}</h4>
-          </div>
-      </ng-container >
-  </div> --> 
+</owl-carousel-o> -->
+<div class="container">
+
+  <ng-container *ngFor="let movie of movies | async; let i = index">
+    <a class="item" (click)="onClick(movie.id)">
+      <div class="image-container">
+        <p class="centered">{{movie.name}}</p>
+        <img src="https://image-placeholder.com/images/actual-size/640x480.png">
+      </div>
+    </a>
+  </ng-container>
+</div>

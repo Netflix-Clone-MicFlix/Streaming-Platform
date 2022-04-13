@@ -1,8 +1,9 @@
 
 <div>
     <h1>{{movie.name}}</h1>
+    <input type="button" class="Btn" value="back" (click)="back()" />
     <h3>{{movie.description}}</h3>
-    <button type="button" class="btn btn-secondary" (click)="back()">back</button>
+
 
 </div>
 <div *ngIf="movieDataLoaded | async">

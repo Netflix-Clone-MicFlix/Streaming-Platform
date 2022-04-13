@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
-@import url(https://fonts.googleapis.com/css?family=Montez);
-
 * {
     box-sizing: border-box;
     
@@ -31,10 +28,13 @@
   }
 
   .vertical-center {
-    margin-left: 33%;
-    top: 40%;
+    margin-left: 40%;
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    
   }
-  
+
   h1 {
     display: inline-block;
     position: relative;
@@ -45,9 +45,9 @@
 }
 
 
-
 h3 {
     color: rgb(167, 0, 0);
     font-family: Source Sans Pro;
 
 }
+

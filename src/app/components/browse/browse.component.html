@@ -1,6 +1,13 @@
-<h1> Welkom back to Micflix {{user}}!</h1>
+<div>
+    <h1> Welkom back to Micflix {{user}}!</h1>
 
-<button type="button" class="btn btn-secondary" (click)="back()">back</button>
+    <input type="button" class="Btn" value="back" (click)="back()" />
+    <input style="float: right;margin: -65px auto;width: 20%;background-color: #1d1d1d" type="input" class="Btn" placeholder=" search" />
+
+    <br><br><br><br><br><br><br>
+
+</div>
+
 
 <div *ngFor="let genre of genres">
     <div>

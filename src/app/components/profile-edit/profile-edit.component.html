@@ -1,0 +1,42 @@
+
+  <div class="wrapper">
+    <div class="profile">
+      <div class="content">
+        <h1 style="text-align:center">Edit your profile</h1>
+        <form  action="">
+          <fieldset>
+            <div class="grid-35">
+              <label for="fname">Profile Name</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="fname" tabindex="1" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="grid-35">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="grid-75">        
+                <div class="dropdown">   
+                      <span> Language</span>
+                      <div class="dropdown-content">
+                        <p style="cursor: pointer" href="#">English</p>
+                        <p style="cursor: pointer" href="#">Dutch</p>
+                        <p style="cursor: pointer" href="#">日本語 (Japanese)</p>               
+                      </div>              
+                </div>    
+            </div>
+          </fieldset>
+          <fieldset>    
+
+            <input type="button" class="Btn cancel" value="Cancel" (click)="back()" />
+            <input type="submit" class="Btn" value="Save Changes" (click)="SaveChanges()"/>
+          </fieldset>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- http://www.smashingmagazine.com/2013/08/08/release-livestyle-css-live-reload/ -->
