@@ -1,40 +1,18 @@
-.container {
-    display: flex;
-    margin-top: 50px;
+
+
+    /* transform: translate(-50%, -50%); */
+.item:hover{
+        transform: translate(0%, -25%);
+
 }
 
-.item {
-    position: relative;
-    display: block;
-    flex: 1 1 0px;
-    transition: transform 500ms;
-}
+.itemtext{
+    display: inline;
+    overflow:hidden;
+    width:110px; 
 
-.container .item:focus,
-.container .item:hover {
-    transform: scale(1.2);
-    z-index: 1;
 }
+.itemtext:hover{
+    transform: translate(0%, -25%);
 
-body {
-    overflow: hidden;
-}
-
-.item img {
-    display: block;
-    max-width: 100%;
-}
-
-/* Centered text */
-.centered {
-    position: absolute;
-    background-color: white;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.image-container {
-    position: relative;
-    text-align: center;
 }

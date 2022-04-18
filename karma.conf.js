@@ -32,6 +32,10 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
+    files: [
+      { pattern: 'assets/images/*.*', watched: true, included: true, served: true },
+      { pattern: 'assets/videos/*.*', watched: true, included: true, served: true },  
+  ],
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,

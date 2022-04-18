@@ -1,26 +1,37 @@
-<div class="wrapper">
-  <div class="profile">
-    <div class="content">
-      <form action="">
 
 
-
-        <h1 style="text-align:center">Micflix select your profile</h1>
-        <input style="  float: left;clear: both;width: 10%; margin: 15px auto;" type="button" class="Btn" value="logout" (click)="logout()" />
-        <br><br><br><br><br>
-
-        <div class="row">
-          <ng-container *ngFor="let profile of profiles | async; let i = index">
-            <div class="column" (click)="onClick()">
-              <img src={{profile_imgs[i]}} alt="Snow" style="width:50%">
-              <h3>{{profile.name}}</h3>
+<body>
+  <div id="AcountOverlay">
+    <img class="logo" src="../../../assets/images/micflix_logo.png" alt="">
+    <h1 id="HeaderInfo">Who's watching?</h1>
+    <div class="AcountHolder">
+      
+      <ng-container *ngFor="let profile of profiles | async; let i = index">
+        <div class="Acount">
+          <a onclick="ShowHomePage()">
+            <div id="EditProfile">
             </div>
-          </ng-container>
+            <img class="ProfileImg"
+              src="https://via.placeholder.com/320"
+              alt=""
+              (click)="onClick()"
+              >
+            <p>{{profile.name}}</p>
+          </a>
         </div>
-        <div class="vertical-center">
-          <input type="button" value="Manage Profiles" class="Btn" (click)="manageProfiles()"/>
-        </div>
-      </form>
+
+      </ng-container>
     </div>
+    <button (click)="manageProfiles()" type="button" class="btn btn-outline-secondary">
+      <p id="EditProfiletext">Profiel beheren</p>
+    </button>
   </div>
-</div>
+  <!-- <div id="EditProfileOverlay">
+    <img class="logo" src="https://drive.google.com/file/d/1qO-c9I0B2JzzQxvTrwNf4s9YAjteCkwf/view?usp=sharing" alt="">
+    <h1>Edit Profiel</h1>
+    <button onclick="ToggleEditPage()" type="button" class="btn btn-outline-secondary">
+      <p id="SaveProfileSettings">Save</p>
+    </button>
+  </div>
+</body> -->
+

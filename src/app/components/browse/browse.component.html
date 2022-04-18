@@ -1,18 +1,32 @@
-<div>
-    <h1> Welkom back to Micflix {{user}}!</h1>
 
-    <input type="button" class="Btn" value="back" (click)="back()" />
-    <input style="float: right;margin: -65px auto;width: 20%;background-color: #1d1d1d" type="input" class="Btn" placeholder=" search" />
+<app-navbar></app-navbar>
+<!--HomePage Video Autplay-->
+<video autoplay [muted]="'muted'" loop id="myVideo">
+    <source src="../../../assets/videos/Star-Citizen_Loopvid.mp4" type="video/mp4">
+</video>
 
-    <br><br><br><br><br><br><br>
 
+ <!--TitleScreen for homepage Video-->
+ <div class="TitleHomeScreen">
+    <h2>The legend of star commander 14</h2>
+        <button type="button" class="btn btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+            </svg> Play video
+        </button>
+        <button type="button" class="btn btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+              </svg> My list
+        </button>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, impedit qui dicta debitis non alias, error fugiat quam aspernatur temporibus veniam est sunt. Ullam voluptates ipsum ab esse est dignissimos?
+        </p>
 </div>
+<br><br><br>
+
 
 
 <div *ngFor="let genre of genres">
-    <div>
-        <app-carousel-holder [genre]="genre"></app-carousel-holder>
-    </div>
+    <app-carousel-holder [genre]="genre"></app-carousel-holder>
 </div>
-
-

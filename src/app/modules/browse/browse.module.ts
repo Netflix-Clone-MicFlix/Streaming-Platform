@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BrowseComponent } from 'src/app/components/browse/browse.component';
 import { BrowseRoutingModule } from './browse-routing.module';
 import { CarouselHolderModule } from '../carousel-holder/carousel-holder.module';
+import { NavbarModule } from '../navbar/navbar.module';
 
 
 
@@ -11,7 +12,8 @@ import { CarouselHolderModule } from '../carousel-holder/carousel-holder.module'
   imports: [
     CommonModule,
     BrowseRoutingModule,
-    CarouselHolderModule
+    CarouselHolderModule,
+    NavbarModule
   ]
 })
 export class BrowseModule { }
