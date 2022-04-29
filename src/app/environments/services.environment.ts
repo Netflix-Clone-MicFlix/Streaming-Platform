@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    movieService: 'https://data-movie-service.krekels-server.com/v1/movie',
-    userService: 'https://data-user-service.krekels-server.com/v1/user',
+    movieService: 'https://movie-service/v1/movie',
+    userService: 'https://user-service/v1/user',
   };
