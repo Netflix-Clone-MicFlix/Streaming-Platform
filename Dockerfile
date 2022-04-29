@@ -1,6 +1,7 @@
 FROM node:latest as node
 WORKDIR /app
 COPY . .
+RUN npm install --save --legacy-peer-deps
 RUN npm ci
 RUN npm run build --prod
 
