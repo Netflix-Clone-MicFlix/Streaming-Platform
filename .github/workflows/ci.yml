@@ -1,9 +1,9 @@
 name: CI/CD
 on: 
   push:
-    branches: [ main ]
+    branches: [ kubernetes-backend-service-connection ]
   pull_request:
-    branches: [ main ]
+    branches: [ kubernetes-backend-service-connection ]
 
 jobs:      
   build-and-push-image:
