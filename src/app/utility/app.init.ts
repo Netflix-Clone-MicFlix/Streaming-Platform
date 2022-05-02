@@ -1,10 +1,11 @@
 import { KeycloakService } from "keycloak-angular";
+import { environment } from "../environments/services.environment";
 
 export function initializeKeycloak(keycloak: KeycloakService) : () => Promise<boolean> {
     return () =>
         keycloak.init({
             config: {
-                url: 'https://keycloak.krekels-server.com/auth',
+                url: environment.keycloakUrl,
                 realm: 'micflix',
                 clientId: 'micflix-angular-client'
             },
