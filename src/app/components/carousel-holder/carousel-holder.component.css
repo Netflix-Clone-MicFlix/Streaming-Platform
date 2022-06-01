@@ -2,7 +2,7 @@
 
     /* transform: translate(-50%, -50%); */
 .item:hover{
-        transform: translate(0%, -25%);
+        transform: translate(0%, -10%);
 
 }
 
@@ -12,7 +12,7 @@
     width:110px; 
 
 }
-.itemtext:hover{
+/* .itemtext:hover{
     transform: translate(0%, -25%);
 
-}
+} */

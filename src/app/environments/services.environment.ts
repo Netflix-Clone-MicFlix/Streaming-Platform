@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  movieService: 'https://movie-service/v1/movie',
-  userService: 'https://user-service/v1/user',
-  keycloakUrl: 'https://keycloak/auth',
+  movieService: 'http://20.105.72.188:9200/v1/movie',
+  userService: 'http://20.105.72.207:9400/v1/user',
+  keycloakUrl: 'http://20.105.72.248:8080/auth',
 };

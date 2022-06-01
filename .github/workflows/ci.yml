@@ -1,9 +1,9 @@
 name: CI/CD
 on: 
   push:
-    branches: [ kubernetes-backend-service-connection ]
+    branches: [ temporary-azure-connection ]
   pull_request:
-    branches: [ kubernetes-backend-service-connection ]
+    branches: [ temporary-azure-connection ]
 
 jobs:      
   build-and-push-image:

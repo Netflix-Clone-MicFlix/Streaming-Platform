@@ -15,7 +15,7 @@
     <ng-container *ngFor="let movie of movies | async; let i = index">
 
       <div class="vid" (click)="onClick(movie.id)">
-        <p class="itemtext">{{movie.name}}</p>
+        <p class="itemtext" style="width: 600px;">{{movie.name}}</p>
         <img class="item" src="https://image-placeholder.com/images/actual-size/640x480.png" alt="">
       </div>
     </ng-container>
