@@ -33,9 +33,8 @@ export class ProfileManageComponent implements OnInit {
   back(){
     this.router.navigateByUrl("/profile");
   }
-  onClick(id:string){
-    console.log(id)
-    this.router.navigate(["/manageprofiles/edit",id]);
+  onClick(index:number){
+    this.router.navigate(["/manageprofiles/edit", this.user_id,index]);
   }
 
 }
