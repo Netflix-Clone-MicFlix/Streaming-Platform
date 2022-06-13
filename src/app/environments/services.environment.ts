@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  movieService: 'http://20.105.72.188:9200/v1/movie',
-  userService: 'http://20.105.72.207:9400/v1/user',
-  keycloakUrl: 'http://20.105.72.248:8080/auth',
+  movieService: 'https://data.krekels-server.com/movie-service/v1/movie',
+  userService: 'https://data.krekels-server.com/user-service/v1/user',
+  keycloakUrl: 'https://keycloak.krekels-server.com/auth',
 };
